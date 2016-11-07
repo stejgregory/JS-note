@@ -1,9 +1,15 @@
 'use srict';
 
-var note = new Note('howdy')
+function returnStoredText() {
+  var note = new Note("Please make sense");
+  assert.isTrue(note.returnNote() === "Please make sense");
+};
 
-if(note.returnNote() !== 'howdy'){
-  throw new Error('Return Note doesnt return the note')
-} else {
-  console.log('Passing')
-}
+function takesTextUponInstantiation() {
+  var note = new Note("Our second test");
+  assert.isTrue(note._text === "Our second test");
+};
+
+
+returnStoredText();
+takesTextUponInstantiation();

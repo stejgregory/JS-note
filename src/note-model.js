@@ -1,13 +1,15 @@
 'use strict';
 
- function Note(note){
-   this._text = note
- }
+(function(exports) {
 
-   (function (exports) {
+  function Note(note){
+    this._text = note
+  }
 
-    Note.prototype.returnNote = function () {
-     return this._text;
-    };
+  Note.prototype.returnNote = function () {
+   return this._text;
+  };
 
-   })(this);
+exports.Note = Note;
+
+})(this);
