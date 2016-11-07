@@ -1,4 +1,4 @@
-'use srict';
+'use strict';
 
 function returnStoredText() {
   var note = new Note("Please make sense");
@@ -7,7 +7,7 @@ function returnStoredText() {
 
 function takesTextUponInstantiation() {
   var note = new Note("Our second test");
-  assert.isTrue(note._text === "Our second test");
+  assert.isTrue(note.text === "Our second test");
 };
 
 

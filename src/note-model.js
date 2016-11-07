@@ -3,11 +3,11 @@
 (function(exports) {
 
   function Note(note){
-    this._text = note
+    this.text = note
   }
 
   Note.prototype.returnNote = function () {
-   return this._text;
+   return this.text;
   };
 
 exports.Note = Note;
