@@ -3,7 +3,7 @@
     this.htmlBody = view.html();
   }
 
-  NoteController.prototype.showList = function() {
+  NoteController.prototype.showList = function () {
     document.getElementById('app').innerHTML = this.htmlBody;
   };
 
