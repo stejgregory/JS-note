@@ -1,8 +1,12 @@
 (function(exports) {
 
-function Note(text) {
-  this.text = text;
-}
+    function Note(text) {
+        this.text = text;
+    }
 
-exports.Note = Note;
+    Note.prototype.getText = function() {
+        return this.text;
+    }
+
+    exports.Note = Note;
 })(this);
