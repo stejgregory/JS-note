@@ -1,3 +1,13 @@
-var greeting = document.getElementById('app');
+(function(exports) {
+  function NoteController(view) {
+    this.htmlBody = view.html();
+  }
 
-greeting.innerHTML = 'howdy';
+  NoteController.prototype.showList = function() {
+    var test = document.getElementById('app')
+    test.innerHTML("STRING");
+  }
+
+  exports.NoteController = NoteController;
+  exports.showList = this.showList;
+})(this);
