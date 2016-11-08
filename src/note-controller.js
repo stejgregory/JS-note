@@ -4,9 +4,8 @@
   }
 
   NoteController.prototype.showList = function() {
-    var test = document.getElementById('app')
-    test.innerHTML("STRING");
-  }
+    document.getElementById('app').innerHTML = this.htmlBody;
+  };
 
   exports.NoteController = NoteController;
   exports.showList = this.showList;
