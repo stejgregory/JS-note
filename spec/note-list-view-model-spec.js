@@ -13,7 +13,7 @@ function testReturnHTML() {
     var noteList = new NoteList();
     noteList.saveNote(text);
     var noteListView = new NoteListView(noteList);
-    assert.isTrue(noteListView.returnHTML() === "<ul><li><div>Jeg drar frem min ukulele</div></li></ul>")
+    assert.isTrue(noteListView.returnHTML() === "<li><div>Jeg drar frem min ukulele</div></li>")
 }
 
 testReturnHTML();
