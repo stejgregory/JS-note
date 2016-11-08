@@ -1,9 +1,15 @@
-
-function testNotesStore() {
-  var note = new Note('Random Text');
-  var notes = new Notes();
-  notes.saveNote(note);
-  assert.isTrue(notes.notesArray[0] === note)
+function testNotesStore(text) {
+    var notes = new Notes();
+    notes.saveNote(text);
+    assert.isTrue(notes.notesArray[0] instanceof Note)
 }
 
-testNotesStore();
+testNotesStore("Hjelp");
+
+function testNotesReturn(text) {
+    var notes = new Notes();
+    notes.saveNote(text);
+    assert.isTrue(notes.showNotes.length === 1)
+}
+
+testNotesReturn("Hei på deg");
