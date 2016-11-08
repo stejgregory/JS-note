@@ -4,7 +4,7 @@ function testNoteReturnsText() {
   if (note.returnText() !== "Hello World") {
     throw new Error("Note is not returning text");
   }
-  else { console.log("Passed: " + note.returnText()) }
-};
+  else { console.log("Passed: " + note.returnText()); }
+}
 
 testNoteReturnsText();
