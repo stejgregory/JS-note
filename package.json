@@ -1,0 +1,19 @@
+{
+  "name": "notes-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andygjenkins/notes-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andygjenkins/notes-js/issues"
+  },
+  "homepage": "https://github.com/andygjenkins/notes-js#readme"
+}
