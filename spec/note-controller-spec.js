@@ -16,7 +16,7 @@ function testInsertNotes() {
   document.getElementById = function() {
     return dummyElement;
   };
-  var notes = controller.insertNotes();
+  var notes = controller.noteListView.displayNotes();
   document.getElementById('app').innerHTML = notes;
   assert.isTrue(dummyElement.innerHTML === notes);
 }
