@@ -1,7 +1,6 @@
-var note = new Note('Favourite Drink: Pepsi');
 var noteList = new NoteList();
-noteList.saveNote(note);
-
+noteList.saveNote("Apple");
+noteList.saveNote("Orange");
 var controller = new NoteController(noteList);
 
 controller.insertNotes();
