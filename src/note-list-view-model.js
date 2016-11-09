@@ -9,7 +9,7 @@
       var list = notes.map(function(note) {
           return "<li><div>" + note.getText() + "</div></li>";
       }).join("");
-      return list;
+      return '<ul>' + list + '</ul>';
     };
 
     exports.NoteListView = NoteListView;

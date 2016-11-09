@@ -13,7 +13,7 @@ function testDisplayNotes() {
     var noteList = new NoteList();
     noteList.saveNote(text);
     var noteListView = new NoteListView(noteList);
-    assert.isTrue(noteListView.displayNotes() === "<li><div>Jeg drar frem min ukulele</div></li>");
+    assert.isTrue(noteListView.displayNotes() === "<ul><li><div>Jeg drar frem min ukulele</div></li></ul>");
 }
 
 testDisplayNotes();
