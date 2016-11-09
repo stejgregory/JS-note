@@ -9,7 +9,7 @@
         this.notesArray.push(note);
     };
 
-    NoteList.prototype.showNotes = function(text) {
+    NoteList.prototype.showNotes = function() {
         return this.notesArray;
     };
 

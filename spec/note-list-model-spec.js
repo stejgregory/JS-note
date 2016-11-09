@@ -9,7 +9,8 @@ testNotesStore("Hjelp");
 function testNotesReturn(text) {
     var noteList = new NoteList();
     noteList.saveNote(text);
-    assert.isTrue(noteList.showNotes.length === 1);
+    noteList.saveNote(text);
+    assert.isTrue(noteList.showNotes().length === 2);
 }
 
 testNotesReturn("Hei på deg");
