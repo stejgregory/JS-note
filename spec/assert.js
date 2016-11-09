@@ -1,7 +1,21 @@
+'use strict';
+
 var assert = {
   isTrue: function(assertionToCheck) {
     if (!assertionToCheck) {
       throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+    } else {
+      console.log("isTrue is passing");
     }
-  };
+  }
+};
+
+var emptyArray = {
+  isItEmpty: function(assertionToCheck) {
+    if (!assertionToCheck.length === 0) {
+      throw new Error("Assertion failed: " + assertionToCheck + " is not empty");
+    } else {
+      console.log("isItEmpty assertion is passing");
+    }
+  }
 };

@@ -1,3 +1,5 @@
+'use strict';
+
 function testNoteControllerIsInstantiated() {
   var noteList = new NoteList();
   noteList.addNote("Hello Glasgae");
@@ -11,11 +13,11 @@ function testNoteControllerIsInstantiated() {
     console.log("Passed: " + noteController.htmlBody);
   }
 
-  if(noteController.showList !== "") {
-    console.log("Error: " + noteController.showList);
-  } else {
-    console.log("Passed: " + noteController.showList);
-  }
+  // if(noteController.showList !== "") {
+  //   console.log("Error: " + noteController.showList);
+  // } else {
+  //   console.log("Passed: " + noteController.showList);
+  // }
 }
 
 testNoteControllerIsInstantiated();

@@ -1,3 +1,5 @@
+'use strict';
+
 (function(exports) {
   function Note(text) {
     this.text = text
@@ -8,5 +10,4 @@
   };
 
   exports.Note = Note;
-  exports.returnText = this.returnText;
 })(this);

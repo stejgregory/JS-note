@@ -1,3 +1,5 @@
+'use strict';
+
 (function(exports) {
   function NoteView(list) {
     this.notes = list.returnNotes();
@@ -13,6 +15,4 @@
   }
 
   exports.NoteView = NoteView;
-  exports.html = this.html;
-
 })(this);

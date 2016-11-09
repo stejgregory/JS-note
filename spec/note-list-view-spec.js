@@ -1,3 +1,5 @@
+'use strict';
+
 function testNoteListView() {
   var noteList = new NoteList();
   noteList.addNote("Hello Glasgae");

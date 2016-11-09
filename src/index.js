@@ -1,3 +1,5 @@
+'use strict';
+
 var noteList = new NoteList();
 
 noteList.addNote("Favourite drink: seltzer");

@@ -1,3 +1,5 @@
+'use strict';
+
 (function(exports) {
   function NoteController(view) {
     this.htmlBody = view.html();
@@ -8,5 +10,4 @@
   };
 
   exports.NoteController = NoteController;
-  exports.showList = this.showList;
 })(this);
