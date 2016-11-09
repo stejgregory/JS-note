@@ -1,3 +1,14 @@
-var element = document.getElementById("app").innerHTML = 'Howdy';
+(function(exports) {
 
-console.log(element);
+  function NoteController(noteList) {
+    this.noteListView = new NoteListView(noteList);
+  }
+
+  NoteController.prototype.insertNotes = function () {
+    var notes = this.noteListView.displayNotes();
+    document.getElementById("app").innerHTML = notes;
+  };
+
+  exports.NoteController = NoteController;
+  exports.insertNotes = this.insertNotes;
+})(this);
