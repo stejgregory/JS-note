@@ -2,7 +2,7 @@ function testNoteList(text) {
     var noteList = new NoteList();
     noteList.saveNote(text);
     var noteListView = new NoteListView(noteList);
-    assert.isTrue(noteListView.noteListStore === noteList);
+    assert.isTrue(noteListView.noteList === noteList);
 }
 
 testNoteList("Vil du bli med meg hjem og høre meg spille ukulele")
