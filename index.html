@@ -8,10 +8,31 @@
     <div id="app">
       Hello
     </div>
+    <script>
+      makeUrlChangeForCurrentNoteCurrentPage();
+
+      function makeUrlChangeForCurrentNote() {
+        window.addEventListener("hashchange", showNoteForCurrentPage());
+      };
+
+      function showNoteForCurrentPage() {
+        showNote(getNoteFromUrl(window.location));
+      };
+
+      function getNoteFromUrl(location) {
+        return location.hash.split("#notes/")[1];
+      };
+
+      function showNote(note) {
+        document
+          .getElementById("app")
+          .innerHTML = note;
+      };
+    </script>
     <script src="src/note-controller.js"></script>
     <script src="src/note-model.js"></script>
     <script src="src/note-list-model.js"></script>
-    <script src="src/note-list-view-model.js"></script>
+    <script src="src/note-list-view.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
